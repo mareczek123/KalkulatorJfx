@@ -46,9 +46,13 @@ public class KalkulatorJfx extends Application {
         HBox hb = new HBox();
         hb.getChildren().addAll(txtFld);
         hb.setSpacing(50);
+        
+        
 /* Cień na przycisku "1" jednak nie wiem czemu nie mogę dodać cieni na
  * pozostałych przyciskach.
  */
+       
+        
         final DropShadow shadow = new DropShadow();
         btn1.addEventHandler(MouseEvent.MOUSE_ENTERED,
                 new EventHandler<MouseEvent>() {
@@ -64,6 +68,7 @@ public class KalkulatorJfx extends Application {
                 btn1.setEffect(null);
             }
         });
+        
 /*Wyrównanie wielkości ikon 
  */
 
